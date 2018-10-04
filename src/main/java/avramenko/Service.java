@@ -8,7 +8,7 @@ public class Service {
         Random random = new Random();
         for (int i=0; i<n; i++){
             for (int j=0; j<n; j++){
-                matrix[i][j]= random.nextInt(100);
+                matrix[i][j]= random.nextInt(10);
             }
         }
         return matrix;
@@ -18,7 +18,7 @@ public class Service {
         int n = matrix.length;
         float[][] finalMatrix = new float[n][n];
         for (int i=0; i<n; i++){
-            float average=0;
+            float average=0.0f;
             for (int j=0; j<n; j++){
                 average += matrix[i][j];
             }
